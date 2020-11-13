@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Railway";
+    src: url("/fonts/Raleway-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Elephant";
+    src: url("/fonts/ELEPHNT.TTF");
+}
+
+/* With size of html set to 100% this means 1rem = 16px */
+html {
+    font-size: 100% /* 16px */
+}
+h1 {
+    font-family: "Elephant";
+    font-size: 1.5rem; /* 40px */
+    color: rgb(255,255,255)
+}
+
+h1 img {
+    display: block;
+    max-width:60%; 
+    max-height:5.5%; /* 0.0918 * 60% to maintain image ratio */
+    width: auto;
+    height: auto;
+}
+
+h2 {
+    font-family: "Railway";
+    font-size: 1.3em; /* 20.8px */
+    color: rgb(255,255,255)
+}
+.image-fit {
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.expanding-box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 50px;
+    max-width: 50px;
+    width: auto;
+    height: auto;
+}
+
+.logo-bk {
+    position: relative;
+    overflow: hidden;
+    background-image: url("/images/O&S-submark-logo-white.png");
+    transform: rotate(90deg); 
+    /* All browsers support */
+    -moz-transform: rotate(90deg); 
+    -webkit-transform: rotate(90deg); 
+    -o-transform: rotate(90deg); 
+    -ms-transform: rotate(90deg); 
+}
+.logo-bk::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: url"/images/O&S-submark-logo-white.png") 0 0 repeat;
+    transform: rotate(30deg);
+  }
+  
+
