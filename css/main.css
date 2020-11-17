@@ -11,26 +11,37 @@
 /* With size of html set to 100% this means 1rem = 16px */
 html {
     font-size: 100% /* 16px */
+    text-align: center;
 }
 h1 {
     font-family: "Elephant";
     font-size: 1.5rem; /* 40px */
-    color: rgb(255,255,255)
+   
 }
 
 h1 img {
     display: block;
-    max-width:60%; 
-    max-height:5.5%; /* 0.0918 * 60% to maintain image ratio */
+    max-width:70%; 
+    max-height:6.42%; /* 0.0918 * 60% to maintain image ratio */
+    min-width: 275px;
     width: auto;
     height: auto;
+    
 }
 
 h2 {
     font-family: "Railway";
-    font-size: 1.3em; /* 20.8px */
-    color: rgb(255,255,255)
+    font-size: 1.5em; /* 24px */
+    font-weight: bold;
 }
+
+h3 {
+    font-family: "Railway";
+    font-size: 1.2em; /* 19.2px */
+    font-weight: bold;
+}
+
+
 .image-fit {
     max-width: 70%;
     max-height: 70%;
@@ -38,12 +49,11 @@ h2 {
 
 .expanding-box {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     max-height: 50px;
     max-width: 50px;
     width: auto;
     height: auto;
+    padding-top: 0.2em;
 }
 
 .logo-bk {
@@ -67,6 +77,127 @@ h2 {
     z-index: -1;
     background: url"/images/O&S-submark-logo-white.png") 0 0 repeat;
     transform: rotate(30deg);
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .center-it {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .floated-left {
+      float: left;
+  }
+
+  .floating-right {
+      float: right;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  @media (max-width:480px){
+    /* @media (min-width: 40em) { */
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+          }
+    }
+  
+  .flex-left {
+    width: 60%;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+
+  .flex-right {
+    width: 45%;
+   
+  }
+
+  .flex-right img {
+    max-width: 100%;
+    min-width: 5em;
+    padding-top: 0.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .submark-left {
+    max-width: 10em;
+    max-height: 10em;
+    width: auto;
+    height: auto;
+    margin-right: 1em;
+    margin-bottom: 1em;
+  }
+
+  .right {
+      text-align: right;
+      padding-right: 1.2em;
+  }
+
+  .smaller-list {
+      font-size: 0.83em;
+  }
+  .fullsize {
+      width: 100%;
+      height: 300px
+  }
+
+  .submark-left-layout {
+      font-size: 1.2em;
+  }
+
+  
+  .white {
+      color: rgb(255,255,255)
+  }
+  .black {
+    color: rgb(0,0,0)
+  }
+
+  .dark-grey {
+      color: rgb(128, 126, 122);
+  }
+
+  .creamy-tan {
+      color: rgb(239, 215, 206);
+  }
+
+  .creamy_tan-bk {
+      background-color: rgb(239, 215, 206);
+  }
+
+  .salmon {
+      color: rgb( 206, 134, 128);
+  }
+
+  .light-tan {
+      color: rgb( 231, 226, 220);
+  }
+
+  .light-tan-bk {
+      background-color: rgb( 231, 226, 220);
+  }
+
+  .tan {
+      color: rgb(206, 199, 192);
   }
   
 
