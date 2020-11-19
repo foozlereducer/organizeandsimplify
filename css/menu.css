@@ -10,7 +10,7 @@
 }
 
 .custom-wrapper.open {
-    height: 14em;
+    height: 17em;
 }
 
 .custom-menu-3 {
@@ -66,6 +66,7 @@
 
     .custom-menu-3 {
         text-align: left;
+        overflow: scroll;
     }
 
     .custom-toggle {
