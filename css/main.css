@@ -235,15 +235,15 @@ background-color: rgb(128, 126, 122);
 }
 
 .salmon {
-    color: rgb( 206, 134, 128);
+    color: rgb(206, 134, 128);
 }
 
 .light-tan {
-    color: rgb( 231, 226, 220);
+    color: rgb(231, 226, 220);
 }
 
 .light-tan-bk {
-    background-color: rgb( 231, 226, 220);
+    background-color: rgb(231, 226, 220);
 }
 
 .tan {
@@ -251,7 +251,7 @@ background-color: rgb(128, 126, 122);
 }
 
 .border-top {
-    border-top: 0.5mm ridge rgb( 206, 134, 128);
+    border-top: 0.5mm ridge rgb(206, 134, 128);
 }
 
 .border-right {

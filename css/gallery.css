@@ -121,10 +121,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .text-box {
-    background: rgb(128, 126, 122); /* medimum gray*/
-    color: rgb(231, 226, 220); /* creamy-tan */ 
-    /* width: 60.6%;
-    padding: 2em; */
+    /* width: 60.6%; */
+    padding: inherit;
 }
 
 .text-box-content {
@@ -152,7 +150,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .text-box-head {
-    color: #fff;
     padding-bottom: 0.2em;
     font-weight: 400;
     text-transform: uppercase;
@@ -171,7 +168,6 @@ h1,h2,h3,h4,h5,h6 {
     bottom: 0;
     right: 0;
     padding: 1em 0.5em;
-    color: white;
     width: 100%;
     font-size: 80%;
     text-align: right;
