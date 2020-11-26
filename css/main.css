@@ -8,10 +8,16 @@
     src: url("/fonts/ELEPHNT.TTF");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+ 
+
+
+
 /* With size of html set to 100% this means 1rem = 16px */
 html {
-    font-size: 100% /* 16px */
-    text-align: center;
+    font-size: 100%; /* 16px */
+    font-family: 'Open Sans', sans-serif!important;
 }
 h1 {
     font-family: "Railway";
@@ -20,20 +26,21 @@ h1 {
 
 }
 
+
+
 h1 img {
     display: block;
     max-width:70%; 
     max-height:6.42%; /* 0.0918 * 60% to maintain image ratio */
     min-width: 230px;
     width: auto;
-    height: auto;
-    
+    height: auto;  
 }
 
 h2 {
     font-family: "Railway";
     font-size: 1.5em; /* 24px */
-    font-weight: bold;
+    font-weight: bolder;
     letter-spacing: 0.1em;
 }
 
@@ -238,6 +245,10 @@ background-color: rgb(128, 126, 122);
     color: rgb(206, 134, 128);
 }
 
+.raspberry {
+    color: rgb(206, 134, 128);
+}
+
 .light-tan {
     color: rgb(231, 226, 220);
 }
@@ -269,24 +280,55 @@ a.button {
     text-transform: uppercase;
 }
 
+a.button-thin {
+    background-color:rgb(206, 134, 128);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.2em;
+}
+
+.footer-logo {
+    font-family: "Elephant";
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+
+.copyright {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-right: 0.5em;
+}
+
+.white-seperator {
+    padding-top: 2.5em;
+    display: block;
+    height: 1px;
+    width: 100%;
+}
+
 @media (max-width:480px){
-    /* @media (min-width: 40em) { */
-        .flex-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: right;
-            }
-    
-        .image-box {
-            width: 50%;
-            height: 50%
-        }
-    
-        .grid {
-            display: grid;
-            width:100%;
-            grid-template-columns: 30% 50%;
-        }
-    
+    h1 img {
+        max-width:100%;
     }
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        }
+
+    .image-box {
+        width: 50%;
+        height: 50%
+    }
+
+    .grid {
+        display: grid;
+        width:100%;
+        grid-template-columns: 30% 50%;
+    }
+    
+}
 

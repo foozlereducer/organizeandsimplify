@@ -1,5 +1,5 @@
 .custom-wrapper {
-    background-color: rgb(231, 226, 220);
+    background-color: rgb(128, 126, 122);
     -webkit-font-smoothing: antialiased;
     height: 2.1em;
     overflow: hidden;
@@ -10,7 +10,7 @@
 }
 
 .custom-wrapper.open {
-    height: 17em;
+    height: 13em;
 }
 
 .right-menu ul {
@@ -19,6 +19,12 @@
 
 .custom-menu-3 {
     text-align: right;
+}
+ul.sub-menu li a {
+    font-size: 0.9em;
+    color: rgb(206, 134, 128);
+    text-decoration: none;
+    line-height: 1.5em;
 }
 
 .custom-toggle {
@@ -31,7 +37,7 @@
 }
 
 .custom-toggle .bar {
-    background-color: rgb(128,126,122);
+    background-color: rgb(231, 226, 220);
     display: block;
     width: 20px;
     height: 2px;
@@ -69,7 +75,7 @@
 @media (max-width: 47.999em) {
 
     .custom-menu-3 {
-        text-align: left;
+        text-align: center;
         overflow: scroll;
     }
 

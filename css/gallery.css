@@ -25,13 +25,17 @@ h1,h2,h3,h4,h5,h6 {
 
 .pure-menu-link {
     padding: 0.5em 0.7em;
-    color: rgb(128, 126, 122);
+    color: rgb(255, 255, 255);
     font-weight: bold;
+}
+
+.pure-menu-link:hover {
+    color:rgb(128, 126, 122);
 }
 
 
 .pure-menu-link-highlighted {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     opacity: 60%;
 }
 
@@ -236,10 +240,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .footer {
-    background:rgb(239, 215, 206);
-    color:rgb( 128, 126, 122);
+    color:rgb(239, 215, 206);
+    background:rgb( 128, 126, 122);
     text-align: center;
-    padding: 1em;
+    padding: 0.5em;
     font-size: 80%;
 }
 
