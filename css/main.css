@@ -124,6 +124,10 @@ blockquote {
     height: 100%;
 }
 
+.kitchen {
+    margin-top: 10%;
+}
+
 .floated-left {
     float: left;
 }
@@ -166,6 +170,13 @@ blockquote {
 
 .submark-right-small {
     float: right;
+    max-width: 5em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.submark-left-small {
+    float: left;
     max-width: 5em;
     margin-right: 1em;
     margin-bottom: 1em;
@@ -284,8 +295,7 @@ a.button-thin {
     background-color:rgb(206, 134, 128);
     color: white;
     text-decoration: none;
-    text-transform: uppercase;
-    padding: 0.2em;
+    padding: 0.1em;
 }
 
 .footer-logo {
@@ -296,6 +306,10 @@ a.button-thin {
     margin-left: 0.5em;
 }
 
+.photo-box img.truck { 
+    width: 85%;
+    max-height: 326px;
+}
 .copyright {
     font-weight: bold;
     font-size: 1.2em;
@@ -309,10 +323,107 @@ a.button-thin {
     width: 100%;
 }
 
+.more {
+    cursor: pointer;
+}
+
+.more {
+    font-size: 0.9em;
+    font-style: italic;
+    color: rgb(206, 134, 128); 
+}
+
+.centre {
+    margin: auto;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.centre-image {
+    margin: auto;
+    display: block;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.card {
+    box-shadow: 0px 1px 5px #555;
+    transition: 0.3s;
+    background-color: white;
+}
+.card__title {
+    font-size: 1rem;
+    padding: .5rem;
+}
+.card__description {
+    padding: .5rem;
+    line-height: 1.6em;
+}
+
+.card__thumbnail img {
+    width: 100%;
+    margin: auto;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+#our-team h1 img {
+    max-width: 50%;
+    margin: auto;
+}
+
+#our-team h2 {
+    text-align: center;
+}
+
+.contact-logos {
+    width: 50px;
+}
+
+button.btn-sty {
+    display: inline-block;
+    background-color: rgb(231, 226, 220); 
+    border-radius: 5px;
+    border: 2px double rgb(128, 126, 122);
+    color: rgb(158, 156, 152);
+    text-align: center;
+    font-size: 1em;
+    padding: 2px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 1px;
+  }
+
 @media (max-width:480px){
     h1 img {
         max-width:100%;
     }
+
+    #our-team h1 img {
+        max-width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
     .flex-container {
         display: flex;
         flex-direction: row;
@@ -329,6 +440,30 @@ a.button-thin {
         width:100%;
         grid-template-columns: 30% 50%;
     }
-    
+
+    .photo-box img.truck {
+        /* multiple width by 0.6442 to get proper ratio*/
+        height: 54.76%;
+        min-height: 85%;
+    }
+
+    blockquote {
+        margin-left: 0px;
+    }
+
+    .centre {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .card__thumbnail img {
+        width: 100%;
+    }
+
+    .submark-left-small {
+        float: none;
+        margin: auto;
+        display: block;
+    }
 }
 

@@ -127,6 +127,7 @@ h1,h2,h3,h4,h5,h6 {
 .text-box {
     /* width: 60.6%; */
     padding: inherit;
+    margin-top: 20px;
 }
 
 .text-box-content {
