@@ -8,10 +8,16 @@
     src: url("/fonts/ELEPHNT.TTF");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+ 
+
+
+
 /* With size of html set to 100% this means 1rem = 16px */
 html {
-    font-size: 100% /* 16px */
-    text-align: center;
+    font-size: 100%; /* 16px */
+    font-family: 'Open Sans', sans-serif!important;
 }
 h1 {
     font-family: "Railway";
@@ -20,20 +26,20 @@ h1 {
 
 }
 
+
+
 h1 img {
     display: block;
     max-width:70%; 
-    max-height:6.42%; /* 0.0918 * 60% to maintain image ratio */
     min-width: 230px;
     width: auto;
-    height: auto;
-    
+    height: auto;  
 }
 
 h2 {
     font-family: "Railway";
     font-size: 1.5em; /* 24px */
-    font-weight: bold;
+    font-weight: bolder;
     letter-spacing: 0.1em;
 }
 
@@ -55,7 +61,6 @@ h3 {
     max-width: 50px;
     width: auto;
     height: auto;
-    padding-top: 0.2em;
 }
 
 .image-box {
@@ -117,6 +122,14 @@ blockquote {
     height: 100%;
 }
 
+.kitchen {
+    margin-top: 10%;
+}
+
+.iem {
+    width: 220px;
+}
+
 .floated-left {
     float: left;
 }
@@ -164,6 +177,13 @@ blockquote {
     margin-bottom: 1em;
 }
 
+.submark-left-small {
+    float: left;
+    max-width: 5em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
 .right {
     text-align: right;
     padding-right: 1.2em;
@@ -180,14 +200,41 @@ blockquote {
 .submark-left-layout {
     font-size: 1.2em;
 }
+/* Our Team */
+.parent {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
+.ourteam-titles {
+    clear: both;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* .column {
+    flex: 0;
+ }
+*/
+.main {
+    padding: 0 20px;
+} 
+
+.sidebar {
+    padding: 0 20px;
+}
+
+
+/* End Our Teeam */
 .grid {
     display: grid;
     width:100%;
     grid-template-columns: 30% 70%;
 }
 
-
+.space-top {
+    padding: 60px;
+}
 .top-grid {
     display: grid;
     width:100%;
@@ -235,15 +282,19 @@ background-color: rgb(128, 126, 122);
 }
 
 .salmon {
-    color: rgb( 206, 134, 128);
+    color: rgb(206, 134, 128);
+}
+
+.raspberry {
+    color: rgb(206, 134, 128);
 }
 
 .light-tan {
-    color: rgb( 231, 226, 220);
+    color: rgb(231, 226, 220);
 }
 
 .light-tan-bk {
-    background-color: rgb( 231, 226, 220);
+    background-color: rgb(231, 226, 220);
 }
 
 .tan {
@@ -251,7 +302,7 @@ background-color: rgb(128, 126, 122);
 }
 
 .border-top {
-    border-top: 0.5mm ridge rgb( 206, 134, 128);
+    border-top: 0.5mm ridge rgb(206, 134, 128);
 }
 
 .border-right {
@@ -269,24 +320,190 @@ a.button {
     text-transform: uppercase;
 }
 
-@media (max-width:480px){
-    /* @media (min-width: 40em) { */
-        .flex-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: right;
-            }
-    
-        .image-box {
-            width: 50%;
-            height: 50%
-        }
-    
-        .grid {
-            display: grid;
-            width:100%;
-            grid-template-columns: 30% 50%;
-        }
-    
+a.button-thin {
+    background-color:rgb(206, 134, 128);
+    color: white;
+    text-decoration: none;
+    padding: 0.1em;
+}
+
+.footer-logo {
+    font-family: "Elephant";
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+
+.photo-box img.truck { 
+    width: 85%;
+    max-height: 326px;
+}
+.copyright {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-right: 0.5em;
+}
+
+.white-seperator {
+    padding-top: 2.5em;
+    display: block;
+    height: 1px;
+    width: 100%;
+}
+
+.more {
+    cursor: pointer;
+}
+
+.more {
+    font-size: 0.9em;
+    font-style: italic;
+    color: rgb(206, 134, 128); 
+}
+
+.centre {
+    margin: auto;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.centre-image {
+    margin: auto;
+    display: block;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.card {
+    box-shadow: 0px 1px 5px #555;
+    transition: 0.3s;
+    background-color: white;
+}
+.card__title {
+    font-size: 1rem;
+    padding: .5rem;
+}
+.card__description {
+    padding: .5rem;
+    line-height: 1.6em;
+}
+
+.card__thumbnail img {
+    width: 100%;
+    margin: auto;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+#our-team h1 img {
+    max-width: 50%;
+    margin: auto;
+}
+
+#our-team h2 {
+    text-align: center;
+}
+
+.contact-logos {
+    width: 50px;
+}
+
+.photo {
+    box-shadow:0 5px 8px #555;
+    transition: 0.3s;
+    background-color: white;
+}
+button.btn-sty {
+    display: inline-block;
+    background-color: rgb(231, 226, 220); 
+    border-radius: 5px;
+    border: 2px double rgb(128, 126, 122);
+    color: rgb(158, 156, 152);
+    text-align: center;
+    font-size: 1em;
+    padding: 2px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 1px;
+  }
+
+@media (min-width: 826px){
+    .parent {
+        grid-template-columns: 1fr 2fr;
     }
+}
+
+@media (max-width:480px){
+    h1 img {
+        max-width:100%;
+    }
+
+    #our-team h1 img {
+        max-width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        }
+
+    .image-box {
+        width: 50%;
+        height: 50%
+    }
+
+    .grid {
+        display: grid;
+        width:100%;
+        grid-template-columns: 30% 50%;
+    }
+
+    .photo-box img.truck {
+        /* multiple width by 0.6442 to get proper ratio*/
+        height: 54.76%;
+        min-height: 85%;
+    }
+
+    blockquote {
+        margin-left: 0px;
+    }
+
+    .centre {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .card__thumbnail img {
+        width: 100%;
+    }
+
+    .submark-left-small {
+        float: none;
+        margin: auto;
+        display: block;
+    }
+}
 
