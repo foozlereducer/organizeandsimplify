@@ -30,7 +30,7 @@ h1 {
 
 h1 img {
     display: block;
-    max-width:70%; 
+    max-width: 535px; /* was 70%; */ 
     min-width: 230px;
     width: auto;
     height: auto;  
@@ -185,6 +185,7 @@ blockquote {
 }
 
 .right {
+    float: right;
     text-align: right;
     padding-right: 1.2em;
 }
@@ -251,6 +252,10 @@ blockquote {
 }
 .two-column-align-left {
     padding-left: 1em;
+}
+
+.two-column-align-center {
+    text-align: center;
 }
 
 .two-column-padding-right {
@@ -350,6 +355,13 @@ a.button-thin {
     display: block;
     height: 1px;
     width: 100%;
+    clear: both;
+}
+.seperator {
+    display: block;
+    height: 1px;
+    width: 100%;
+    clear: both;
 }
 
 .more {
@@ -447,6 +459,47 @@ button.btn-sty {
     margin: 1px;
   }
 
+.services-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1.services {
+    padding-top: 20px;
+}
+.s-row {
+    display: flex;
+}
+
+.s-row a {
+    text-decoration: none;
+}
+  
+.s-column {
+    flex: 50%;
+    padding: 0 15px 20px 15px;
+}
+.s-no-href-column {
+    flex: 50%;
+    padding: 0 15px 0 15px;
+}
+
+.s-column:hover {
+    background-color:rgb(239, 215, 206);
+    /* border: 1px solid rgb(128, 126, 122); */
+}
+
+.boxes {
+    max-width: 150px;
+}
+.s-truck {
+    max-width: 250px;
+}
+
+.ad_rates {
+    width: 80%;
+}
 @media (min-width: 826px){
     .parent {
         grid-template-columns: 1fr 2fr;
@@ -455,7 +508,7 @@ button.btn-sty {
 
 @media (max-width:480px){
     h1 img {
-        max-width:100%;
+        max-width:90%;
     }
 
     #our-team h1 img {
@@ -505,5 +558,9 @@ button.btn-sty {
         margin: auto;
         display: block;
     }
+    .s-row {
+        display: block;
+    }
+    
 }
 
