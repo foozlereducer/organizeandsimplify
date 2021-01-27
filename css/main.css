@@ -138,6 +138,14 @@ blockquote {
     float: right;
 }
 
+.photo-align-weight-right {
+    float: right;
+}
+
+.photo-align-weght-left {
+    float: none;
+}
+
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -441,6 +449,7 @@ a.button-thin {
     box-shadow:0 5px 8px #555;
     transition: 0.3s;
     background-color: white;
+    margin: 20px;
 }
 button.btn-sty {
     display: inline-block;
@@ -562,5 +571,17 @@ h1.services {
         display: block;
     }
     
+    .photo-align-weight-right {
+        float: none;
+        width: auto;
+        height: auto;
+        width: 100%;
+    }
+
+    .photo-align-weght-left {
+        width: auto;
+        height: auto;
+        width: 100%;
+    }
 }
 
