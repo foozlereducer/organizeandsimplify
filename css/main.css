@@ -570,6 +570,10 @@ h1.services {
     .s-row {
         display: block;
     }
+
+    .photo {
+        margin: inherit;
+    }
     
     .photo-align-weight-right {
         float: none;
