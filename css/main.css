@@ -122,6 +122,10 @@ blockquote {
     height: 100%;
 }
 
+.zero-margin-left {
+    margin-left: 0;
+}
+
 .kitchen {
     margin-top: 10%;
 }
@@ -586,6 +590,10 @@ h1.services {
         width: auto;
         height: auto;
         width: 100%;
+    }
+
+    .zero-margin-left {
+        margin: auto;
     }
 }
 
